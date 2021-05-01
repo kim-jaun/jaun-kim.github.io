@@ -1,0 +1,78 @@
+body {
+  background-color: #2c3e50;
+}
+.btn {
+  cursor: pointer;
+}
+body {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+h1 {
+  font-size: 70px;
+  margin-bottom: 5px;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 100vh;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+.form,
+.greetings {
+  display: none;
+}
+.showing {
+  display: block;
+  font-size: 35px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.js-form input,
+.js-toDoForm input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.js-form input,
+.js-toDoForm input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+.js-form input::placeholder,
+.js-toDoForm input::placeholder {
+  color: white;
+}
+.fontStyle {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: -15px;
+}
